@@ -1,0 +1,90 @@
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-color: #cccccc;
+
+    font-family: "Red Hat Display", sans-serif;
+}
+
+main {
+    background: white;
+    border-radius: 16px;
+    max-width: 450px;
+    box-shadow: 0 32px 32px hsla(223, 47%, 23%, 0.2);
+}
+
+.top-banner {
+    height: auto;
+}
+
+.order-card {
+    background-color: white;
+    padding: 16px 32px 42px 32px;
+    text-align: center;
+    border-radius: 0 0 16px 16px;
+}
+
+.hero-img {
+    border-radius: 16px 16px 0 0;
+}
+
+.plan-info {
+    display: flex;
+    align-items:flex-end;
+    padding: 8px 32px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 8px;
+    margin-top: 32px;
+}
+
+
+
+.plan-icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 32px;
+}
+
+h1 {
+    color: hsl(223, 47%, 23%);
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+}
+
+p.bold{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.cta {
+    background-color: hsl(223, 47%, 23%);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: auto;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    box-shadow: 0 16px 16px hsla(223, 47%, 23%, 0.2);
+    cursor: pointer;
+    width: 100%;
+    font-weight: 700;
+}
+
+.cta:hover {
+    background-color: hsl(245, 75%, 52%);
+
+}
