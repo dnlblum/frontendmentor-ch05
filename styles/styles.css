@@ -7,10 +7,12 @@ body {
     align-items: center;
 
     font-size: 16px;
-    background-image: url("images/pattern-background-desktop.svg");
-    background-color: hsl(225, 100%, 98%);
-
     font-family: "Red Hat Display", sans-serif;
+
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 98%);
 }
 
 main {
@@ -35,25 +37,25 @@ main {
     border-radius: 16px 16px 0 0;
 }
 
-
-
 .plan-info {
     display: flex;
     justify-content: space-between;
-    padding: 8px 32px;
+    padding: 16px 32px;
     background-color: hsl(225, 100%, 98%);
     border-radius: 8px;
     margin-top: 32px;
+    align-items: center;
 }
 
-.nested {
-    display: inline-block;
+#nested {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
 }
 
 .plan-icon {
     width: 48px;
     height: 48px;
-    margin-right: 32px;
 }
 
 h1 {
@@ -62,6 +64,7 @@ h1 {
 
 p {
     color: hsl(224, 23%, 55%);
+    margin: 0;
 }
 
 p.bold{
@@ -73,14 +76,14 @@ p.bold{
     background-color: hsl(223, 47%, 23%);
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 16px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     width: auto;
     margin-top: 32px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     border-radius: 8px;
     box-shadow: 0 16px 16px hsla(223, 47%, 23%, 0.2);
     cursor: pointer;
@@ -91,4 +94,32 @@ p.bold{
 .cta:hover {
     background-color: hsl(245, 75%, 52%);
 
+}
+
+a.cancel {
+    font-weight: 700;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+a.cancel:visited {
+    color: hsl(224, 23%, 55%);
+}
+
+a.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+a.change {
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+a.change:visited {
+    color: hsl(245, 75%, 52%);
+}
+
+a.change:hover {
+    text-decoration: none;
+    color: hsl(223, 47%, 23%);
 }
