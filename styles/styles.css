@@ -35,16 +35,20 @@ main {
     border-radius: 16px 16px 0 0;
 }
 
+
+
 .plan-info {
     display: flex;
-    align-items:flex-end;
+    justify-content: space-between;
     padding: 8px 32px;
     background-color: hsl(225, 100%, 98%);
     border-radius: 8px;
     margin-top: 32px;
 }
 
-
+.nested {
+    display: inline-block;
+}
 
 .plan-icon {
     width: 48px;
